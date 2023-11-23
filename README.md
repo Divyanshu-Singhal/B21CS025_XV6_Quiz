@@ -163,10 +163,17 @@ Welcome to the XV Quiz for CSL 3030 - Operating Systems!
     printf(): Prints formatted output to the standard output.
     malloc(): Allocates a specified number of bytes of memory.
     strlen(): Returns the length of a string.
+    
+15. Memory paging in XV6 involves breaking physical memory into fixed-size blocks (pages). Paging enhances memory utilization and simplifies management.
 
 16. The three essential shell commands in the XV6 operating system :
-    ls
-    cd
-    echo
+    ls- Lists all files in a given directory
+    cd- Changes the current directory to open a new directore.
+    echo- Print something directly to the terminal.
 
-17. 
+17. Process synchronization in XV6 is used to prevent conflicts and ensure data consistency. Mechanisms like mutex locks, semaphores, and conditional variables are used.
+18. Interrupts in XV6 are managed through interrupt service routines (ISRs) and the interrupt descriptor table (IDT). They play a vital role in handling external events and ensuring timely system responses.
+19. Virtual memory  allows processes to use more memory than physically available, generally implemented through paging. This provides benefits such as process isolation ,  effective paging and efficient memory 
+    utilization.
+20. The XV6 boot process involves hardware initialization, bootloader loading (e.g., GRUB), kernel loading into memory, and control transfer to the kernel. The kernel then initializes the system, mounts the 
+    root file system, and starts the init process.
