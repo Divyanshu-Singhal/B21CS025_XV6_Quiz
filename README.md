@@ -116,4 +116,57 @@ Welcome to the XV Quiz for CSL 3030 - Operating Systems!
 20. Outline the steps involved in the boot process of XV6. What happens from the moment the computer is powered on to when the XV6 kernel is loaded into memory?
 
 ## Answers
-Please write your answers here
+1. B(A Unix-like operating system)
+2. C(BSD)
+3. D(simple)
+4. B(As interrupts)
+5. A(128)
+6. C(Sh)
+7. A(Round-robin scheduling)
+8. A(Paging)
+9. D(Both b and c)
+10. B(No)
+11. C(MIT)
+12. In XV6 Operating System, A process can be in different states such as :
+    1. Running:
+       Process actively using the CPU.
+       Executing its instructions.
+
+   2. Sleeping:
+      Waiting for an event (e.g., I/O completion).
+      
+   3. Zombie:
+      Process has terminated but still has an entry in the process table.
+      
+   4. Unused:
+      Process table entry not in use.
+      
+   5. Embryo:
+      Newly created process.
+      
+   6. Wait:
+      Process waiting for its child to exit.
+      Typically, waiting in the wait() system call.
+      
+13. XV6 utilizes a hierarchical file system architecture, similar to that of Unix, with directories, files, and Inodes. Inodes serve the purpose of storing metadata pertaining to files and the locations of 
+    their data blocks.
+
+14. System calls are interfaces between user-level applications and the operating system kernel. They provide a way for applications to request services from the operating system while Library functions are 
+    precompiled routines that applications can use. They are not part of the operating system kernel but are linked with the application at compile or runtime.
+
+    Examples of System Calls()
+    fork(): Creates a new process.
+    exit(): Terminates the calling process.
+    read(): Reads data from a file descriptor.
+    
+    Examples of Library functions()
+    printf(): Prints formatted output to the standard output.
+    malloc(): Allocates a specified number of bytes of memory.
+    strlen(): Returns the length of a string.
+
+16. The three essential shell commands in the XV6 operating system :
+    ls
+    cd
+    echo
+
+17. 
